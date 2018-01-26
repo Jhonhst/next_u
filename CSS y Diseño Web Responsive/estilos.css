@@ -1,0 +1,399 @@
+body{
+  background: black;
+  font-family: 'Dancing Script', cursive;
+   }
+
+.contenido{
+  width: 900px;
+  margin: auto;
+  animation-name: animacion;
+  animation-duration: 1s;
+  }
+
+  @-webkit-keyframes animacion {
+  0% {
+  margin-top:150%;
+  }
+  60% {
+  margin-top:-5%;
+  }
+  100% {
+    margin-top:0%;
+  }
+  }
+
+.cabecera{
+  background: #5b7989;
+ padding: 20px;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+}
+
+.cabecera h1{
+  color: white;
+  font-size: 2em;
+  text-shadow: 0 2px 0px #02010a;
+}
+
+.cabecera nav{
+  word-spacing: 15px;
+  padding-left: 260px;
+  padding-top: 30px;
+}
+
+.cabecera a{
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+img{
+  box-shadow:2px 2px 2px #02010a;
+}
+
+
+@media (max-width: 900px){
+  .contenido{
+    width: 100%;
+  }
+  .cabecera{
+    display: flex;
+    flex-flow: column;
+
+  }
+  .cabecera h1{
+    text-align: center;
+  order: 2;
+  padding: 0;
+  margin: 0;
+  }
+  .cabecera nav{
+    text-align: center;
+  order: 2;
+  padding: 0;
+  margin: 0;
+  }
+}
+
+#imagen-central{
+  background: #82c3a6;
+  width: 900px;
+}
+#imagen-central img{
+
+  margin-left:11%;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 900px){
+
+#imagen-central{
+  width: 100%;
+}
+
+  #imagen-central img{
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+.paisajes{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  order: 1;
+flex-grow: 1;
+text-align: center;
+}
+
+.paisajes img{
+  border: solid 1px;
+  transition: border;
+	transition-duration: 1s;
+  transition: transform 1s;
+}
+.paisajes img:hover{
+	border: solid 2px #82c3a6 ;
+  box-shadow:0 5px 15px #82c3a6;
+  transform: rotate(10deg);
+   }
+
+.retratos{
+  margin-top: 40px;
+  margin-bottom: 40px;
+order: 2;
+flex-grow: 1;
+text-align: center;
+}
+.retratos img{
+  border: solid 1px;
+  transition-duration: 1s;
+  transition: transform 1s;
+}
+.retratos img:hover{
+  border: solid 2px #82c3a6 ;
+  box-shadow:0 5px 15px #82c3a6;
+  -webkit-transform:translate(20px,-5px);
+-moz-transform:translate(20px,-5px);
+transform:translate(20px,-5px);
+}
+
+#secundarias a{
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+
+#secundarias{
+   background: #d5c75f;
+  display: flex;
+  flex-flow: nowrap;
+  }
+
+
+@media (max-width: 900px)  {
+
+  .paisajes img{
+    order: 1;
+    width: 90%;
+    height: 100%;
+    transition: transform 1s;
+  }
+  .paisajes img:hover{
+    transform: rotate(8deg);
+     }
+
+.retratos img{
+  order:2;
+  width: 90%;
+  height: 100%;
+  transition: transform 1s;
+}
+.retratos img:hover{
+  -webkit-transform:translate(10px,-5px);
+-moz-transform:translate(10px,-5px);
+transform:translate(10px,-5px);
+}
+
+#secundarias{
+  width: 100%;
+  display: flex;
+  flex-flow:column;
+  font-size: 1em;
+  }
+ }
+
+
+
+#lospaisajes{
+   background: #d5c75f;
+   flex-wrap: wrap;
+   display: flex;
+   text-align: center;
+ }
+
+ #lospaisajes div{
+   margin: 20px;
+ }
+ .imagen1{
+order: 1;
+flex-wrap: 1;
+}
+
+ .imagen2{
+order: 2;
+flex-wrap: 1;
+ }
+ .imagen3{
+ order: 3;
+ flex-wrap: 1;
+ }
+
+ .imagen4{
+order: 4;
+flex-wrap: 1;
+ }
+ .imagen5{
+order:5;
+flex-wrap: 1;
+ }
+ .imagen6{
+order: 6;
+flex-wrap: 1;
+ }
+
+ #lospaisajes div:nth-child(even){
+   -webkit-filter: grayscale(100%);
+ -moz-filter: grayscale(100%);
+ -ms-filter: grayscale(100%);
+ -o-filter: grayscale(100%);
+ filter: grayscale(100%);
+ }
+
+.imagen1 img{
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter: blur(10px);
+}
+.imagen3 img{
+  -webkit-filter: sepia(90%);
+  -moz-filter: sepia(90%);
+  -ms-filter: sepia(90%);
+  -o-filter: sepia(90%);
+  filter: sepia(90%);
+}
+@media (max-width: 900px){
+  #lospaisajes{
+    width: 100%;
+    display: flex;
+    flex-flow:column;
+    text-align: center;
+    }
+    #lospaisajes img{
+    width: 100%;
+    }
+}
+
+#losretratos{
+   background: #d5c75f;
+   flex-wrap: wrap;
+   display: flex;
+   text-align: center;
+ }
+
+ #losretratos div{
+   margin: 20px;
+ }
+ .imagen7{
+order: 1;
+flex-wrap: 1;
+}
+
+ .imagen8{
+order: 2;
+flex-wrap: 1;
+ }
+ .imagen9{
+ order: 3;
+ flex-wrap: 1;
+ }
+
+ .imagen10{
+order: 4;
+flex-wrap: 1;
+ }
+ .imagen11{
+order:5;
+flex-wrap: 1;
+ }
+ .imagen12{
+order: 6;
+flex-wrap: 1;
+ }
+
+ #losretratos div:nth-child(even){
+   -webkit-filter: grayscale(100%);
+ -moz-filter: grayscale(100%);
+ -ms-filter: grayscale(100%);
+ -o-filter: grayscale(100%);
+ filter: grayscale(100%);
+ }
+
+.imagen7 img{
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter: blur(10px);
+}
+.imagen9 img{
+  -webkit-filter: sepia(90%);
+  -moz-filter: sepia(90%);
+  -ms-filter: sepia(90%);
+  -o-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+@media (max-width: 900px){
+  #losretratos{
+    width: 100%;
+    display: flex;
+    flex-flow:column;
+    text-align: center;
+    }
+    #losretratos img{
+      width: 100%;
+    }
+}
+
+ #pie{
+     font-family: 'Dancing Script', cursive;
+   background: #C6d5c5;
+   padding: 100px;
+   border-radius: 0px 0px 10px 10px;
+
+ }
+ .cuadros{
+   display: flex;
+   flex-flow: nowrap;
+   margin: -40px;
+   margin-top: -90px;
+    font-size: 1.2em;
+ }
+ .cuadros a{
+     text-decoration: none;
+ }
+
+ .contacto{
+order: 1;
+ flex-grow: 1;
+ text-align: center;
+ }
+ .terminos{
+   order: 2;
+ flex-grow: 1;
+ text-align: center;
+ }
+ .redes{
+order: 3;
+ flex-grow: 1;
+ text-align: center;
+ }
+ .derechos{
+  order: 4;
+ flex-grow: 1;
+  text-align: center;
+ }
+
+ @media (max-width: 900px)  {
+   .contacto{
+     order: 1;
+   }
+
+ .terminos{
+   order:2;
+ }
+
+ .redes{
+   order:3;
+   margin-right: -75px;
+ }
+
+ .derechos{
+   order:4;
+ }
+
+ .cuadros{
+   width: 100%;
+   display: flex;
+   flex-flow:column;
+   }
+
+   .cuadros h1{
+     padding-top:15px;
+   }
+  }

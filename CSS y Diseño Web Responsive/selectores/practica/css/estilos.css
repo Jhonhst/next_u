@@ -1,0 +1,19 @@
+body
+{
+  background-color: black;
+  color: white;
+}
+footer
+{
+margin-top: 50px;
+}
+img
+{
+  border-radius: 10px;
+}
+#titulo{
+  color: red;
+}
+.inicio{
+  color:green;
+}

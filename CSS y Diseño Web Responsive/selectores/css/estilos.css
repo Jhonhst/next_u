@@ -1,0 +1,24 @@
+body {
+		margin: 20px;
+    font-family: verdana;
+	}
+  .resaltado{
+      background-color:yellow;
+			color: black;
+  }
+  #menu{
+    padding: 10px 0px;
+  }
+  .titulo{
+    background-color:aliceblue;
+  text-align: center;
+	padding: 10px;
+  }
+footer{
+	border-top: solid 1px black;
+	padding-top: 10px;
+	text-align: center;
+}
+a[href^-"#"]{
+	color: red;
+}
